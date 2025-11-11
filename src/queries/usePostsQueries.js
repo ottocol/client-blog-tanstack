@@ -10,7 +10,7 @@ export function usePostsInfinite(perPage = 10) {
       const { page, totalPages } = last
       return page < totalPages ? page + 1 : undefined
     },
-    staleTime: 30_000,
+    staleTime: 10_000,
   })
 }
 
